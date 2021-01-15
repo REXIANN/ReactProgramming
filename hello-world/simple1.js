@@ -3,11 +3,7 @@ function LikeButton() {
   const text = liked ? '좋아요 취소' : '좋아요';
   return /*#__PURE__*/React.createElement("button", {
     onClick: () => setLiked(!liked)
-  }, text); // return React.createElement(
-  //   'button',
-  //   { onClick: () => setLiked(!liked) },
-  //   text,
-  // );
+  }, text); 
 }
 
 function Container() {
@@ -20,31 +16,7 @@ function Container() {
     onClick: () => setCount(count + 1)
   }, "UP"), /*#__PURE__*/React.createElement("button", {
     onClick: () => setCount(count - 1)
-  }, "DOWN"))); // return React.createElement(
-  //   'div',
-  //   null,
-  //   React.createElement(LikeButton),
-  //   React.createElement(
-  //     'div', 
-  //     {
-  //       style: {
-  //         marginTop: 20,
-  //       }
-  //     },
-  //     React.createElement('span', null, 'current count: '),
-  //     React.createElement('span', { style: { marginTop: 10 } }, count),
-  //     React.createElement(
-  //       'button', 
-  //       { onClick: () => setCount(count + 1) },
-  //       'UP',
-  //     ),
-  //     React.createElement(
-  //       'button', 
-  //       { onClick: () => setCount(count - 1) },
-  //       'DOWN',
-  //     )
-  //   )
-  // )
+  }, "DOWN"))); 
 }
 
 const domContainer = document.getElementById('root');
