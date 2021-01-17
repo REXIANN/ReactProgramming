@@ -37,6 +37,19 @@ function App() {
   )
 }
 
+function Home() {
+  return <h2>여기는 홈페이지 입니다. 원하는 페이지 버튼을 클릭하세요.</h2>
+}
+
+function Page1() {
+  return <h2>여기는 Page1 입니다.</h2>
+}
+
+function Page2() {
+  return <h2>여기는 Page2 입니다.</h2>
+}
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
