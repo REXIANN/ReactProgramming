@@ -8,13 +8,14 @@ function App() {
       console.log({ data })
     })
   }
-
+  const myUrl = process.env.REACT_APP_API_URL
+  console.log(myUrl)
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello there!
+          Hello there! {myUrl}
         </p>
         <button onClick={onClick}>데이터 보여주세요</button>
         <p>
