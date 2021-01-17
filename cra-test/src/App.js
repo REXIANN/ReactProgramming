@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import data from './data.json';
 
 
 function App() {
   function onClick() { 
-    
-    console.log({ data })
+    import('./data.json').then(({default: data}) => {
+      console.log({ data })
+    })
   }
 
   return (
