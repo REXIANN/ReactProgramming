@@ -1,11 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import data from './data.json';
+
 
 function App() {
+  function onClick() { 
+    
+    console.log({ data })
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Hello there!
+        </p>
+        <button onClick={onClick}>데이터 보여주세요</button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
