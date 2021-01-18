@@ -12,11 +12,9 @@ export default function App() {
         <br />
         <Link to="/rooms">방 소개</Link>
         <br />
-
         <Route exact path="/" component={Home} />
         <Route path="/photo" component={Photo} />
         <Route path="/rooms" component={Rooms} />
-
       </div>
     </BrowserRouter>
   )
