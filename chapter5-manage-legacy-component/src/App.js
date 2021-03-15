@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import classNames from 'classnames'
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className={classNames("App-link")}
+          className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
